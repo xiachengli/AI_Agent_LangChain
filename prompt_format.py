@@ -3,12 +3,13 @@ from langchain_ollama import OllamaLLM  # 导入OllamaLLM
 from langchain_core.prompts import PromptTemplate, FewShotPromptTemplate  # 导入普通和示例提示词模板
 from langchain_core.output_parsers import JsonOutputParser, StrOutputParser  # 导入JSON和字符串输出解析器
 from pydantic import BaseModel, Field  # 直接从 pydantic 导入
+import time  # 添加时间模块用于计时
 
 # 加载模型
 llm = OllamaLLM(
-    model="qwen3.5:9b", 
+    model="qwen2.5:3b",  # 换小模型
     temperature=0.7,
-    num_ctx=4096,  # 上下文长度
+    num_ctx=1024,  # 上下文长度
     top_p=0.9,
 )
 
@@ -20,6 +21,7 @@ class AnswerSchema(BaseModel):
 # 定义函数，演示JSON结构化输出
 def json_format_demo():
     print("=== JSON结构化输出 ===")  # 打印标题
+    start_time = time.time()  # 开始计时
     parser = JsonOutputParser(pydantic_object=AnswerSchema)  # 创建JSON解析器，指定用AnswerSchema验证结构
     # 创建提示词模板，partial_variables是固定参数，这里传入解析器的格式说明
     prompt = PromptTemplate(
@@ -34,6 +36,8 @@ def json_format_demo():
     )
     chain = prompt | llm | parser  # 构建Chain：提示词→模型→JSON解析
     result = chain.invoke({"question": "LangChain的核心价值是什么？"})  # 传入问题
+    end_time = time.time()  # 结束计时
+    print(f"执行时间：{end_time - start_time:.2f} 秒")  # 打印耗时
     print(f"答案：{result['answer']}")  # 从JSON结果中取answer字段
     print(f"理由：{result['reason']}")  # 取reason字段
     print("-" * 50)  # 分隔线
@@ -55,6 +59,7 @@ def few_shot_demo():
     This is useful for instructing language models to answer questions in a specific format by providing sample demonstrations.
     """
     print("=== FewShot示例提示词 ===")  # 打印标题
+    start_time = time.time()  # 开始计时
     # 定义示例列表，每个示例是input和output的对应
     examples = [
         {"input": "LangChain", "output": "LangChain是AI Agent开发框架，支持工具调用、记忆、链等功能"},
@@ -75,6 +80,8 @@ def few_shot_demo():
     )
     chain = few_shot_prompt | llm | StrOutputParser()  # 构建Chain
     result = chain.invoke({"input": "AI Agent"})  # 传入新的输入，让模型模仿示例回答
+    end_time = time.time()  # 结束计时
+    print(f"执行时间：{end_time - start_time:.2f} 秒")  # 打印耗时
     print(result)  # 打印结果
 
 # 运行函数

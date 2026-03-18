@@ -96,3 +96,7 @@ print(response)
 1. 虚拟环境确保依赖隔离，避免版本冲突；
 2. Ollama 实现本地大模型运行，彻底解决外网 API 问题；
 3. qwen:0.5b 轻量易部署，是 LangChain 入门的最优本地模型选择。
+4. 实际使用了qwen2.5
+
+效果图
+![alt text](image.png)

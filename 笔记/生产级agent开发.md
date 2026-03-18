@@ -1,8 +1,10 @@
 # AI Agent 30天从入门到精通 · 第3周：Agent 进阶与实战（可直接执行详细任务）
+>
 > 目标：从「基础 Agent 调用工具」升级到「生产级 Agent 应用」，掌握复杂场景落地能力（多模型切换、工具扩展、错误处理、可视化）。
 > 适配：基于第2周 LangChain 基础，无缝衔接，每天 2～3 小时，代码全部可直接运行。
 
 ## 第3周总览（Day15～Day21）
+
 - Day15：多模型集成（Ollama 切换 Llama3/Qwen/DeepSeek）
 - Day16：高级 Tool 开发（动态参数、异步工具、工具优先级）
 - Day17：Agent 错误处理与容错机制（重试、降级、日志）
@@ -14,12 +16,17 @@
 ---
 
 ## 每日详细任务（可直接执行版）
+
 ### Day15：多模型集成（摆脱单一模型限制）
+
 #### 核心目标
+
 掌握 LangChain 切换不同本地/云端模型，解决单一模型能力不足问题。
 
 #### 任务步骤
+
 1. **拉取多版本 Ollama 模型**（30分钟）
+
    ```bash
    # 拉取 Llama3（8B，效果更好）
    ollama pull llama3:8b
@@ -30,6 +37,7 @@
    ```
 
 2. **多模型切换代码**（40分钟）
+
    ```python
    # day15_multi_model.py
    from langchain_ollama import OllamaLLM
@@ -63,6 +71,7 @@
    ```
 
 3. **模型动态选择 Agent**（50分钟）
+
    ```python
    # 核心逻辑：根据用户指令类型自动选模型
    def select_model_by_task(task):
@@ -75,17 +84,22 @@
    ```
 
 #### 今日验收
+
 - 能一键切换 3 种不同模型；
 - Agent 能根据任务类型自动选择最优模型。
 
 ---
 
 ### Day16：高级 Tool 开发（解决复杂工具调用问题）
+
 #### 核心目标
+
 开发生产级工具（动态参数、异步、优先级），解决基础 Tool 灵活性不足问题。
 
 #### 任务步骤
+
 1. **动态参数 Tool**（40分钟）
+
    ```python
    # day16_advanced_tool.py
    from langchain_core.tools import BaseTool
@@ -138,6 +152,7 @@
    ```
 
 2. **测试异步工具调用**（30分钟）
+
    ```python
    async def test_async_tool():
        tool = AsyncVideoEditTool()
@@ -149,6 +164,7 @@
    ```
 
 #### 今日验收
+
 - Tool 支持可选参数和自定义校验；
 - 能异步调用工具；
 - Agent 能按优先级选择工具。
@@ -156,11 +172,15 @@
 ---
 
 ### Day17：Agent 错误处理与容错机制
+
 #### 核心目标
+
 让 Agent 面对错误不崩溃（工具调用失败、参数错误、模型返回异常）。
 
 #### 任务步骤
+
 1. **错误捕获与重试**（40分钟）
+
    ```python
    # day17_error_handling.py
    from langchain_core.tools import ToolException
@@ -196,6 +216,7 @@
    ```
 
 2. **日志记录**（30分钟）
+
    ```python
    import logging
 
@@ -220,6 +241,7 @@
    ```
 
 #### 今日验收
+
 - Agent 工具调用失败能自动重试；
 - 错误信息会记录到日志文件；
 - 面对参数错误不会崩溃，返回友好提示。
@@ -227,11 +249,15 @@
 ---
 
 ### Day18：Agent 与外部数据交互
+
 #### 核心目标
+
 让 Agent 能读写文件、查询数据库，对接真实业务数据。
 
 #### 任务步骤
+
 1. **文件读写工具**（40分钟）
+
    ```python
    # day18_data_interaction.py
    @tool
@@ -255,6 +281,7 @@
    ```
 
 2. **数据库查询工具（SQLite）**（50分钟）
+
    ```python
    import sqlite3
 
@@ -303,6 +330,7 @@
    ```
 
 #### 今日验收
+
 - Agent 能读取视频任务配置文件；
 - 能将处理结果写入文件；
 - 能查询/添加数据库中的视频任务。
@@ -310,16 +338,22 @@
 ---
 
 ### Day19：Agent 可视化与调试（LangSmith）
+
 #### 核心目标
+
 用 LangSmith 监控 Agent 运行过程，快速定位问题。
 
 #### 任务步骤
+
 1. **LangSmith 配置**（20分钟）
+
    ```bash
    # 安装依赖
    pip install langsmith
    ```
+
    创建 `.env` 文件，添加：
+
    ```env
    LANGCHAIN_TRACING_V2=true
    LANGCHAIN_API_KEY=你的LangSmith API Key（官网注册获取）
@@ -327,6 +361,7 @@
    ```
 
 2. **启用 LangSmith 追踪**（30分钟）
+
    ```python
    # day19_debug.py
    import os
@@ -345,6 +380,7 @@
    ```
 
 3. **日志分析工具**（40分钟）
+
    ```python
    def analyze_agent_log(log_file: str = "agent.log"):
        """分析Agent日志，统计成功/失败次数"""
@@ -371,17 +407,22 @@
    ```
 
 #### 今日验收
+
 - 能在 LangSmith 控制台看到 Agent 的思考/行动/观察全过程；
 - 能通过日志分析工具统计 Agent 运行情况。
 
 ---
 
 ### Day20：复杂场景实战（视频剪辑全流程 Agent）
+
 #### 核心目标
+
 开发能处理完整视频剪辑流程的 Agent（解析需求→拆分任务→调用工具→保存结果→记录日志）。
 
 #### 任务步骤
+
 1. **全流程 Agent 代码**（60分钟）
+
    ```python
    # day20_video_agent.py
    from langchain_core.prompts import PromptTemplate
@@ -452,19 +493,23 @@
    ```
 
 #### 今日验收
+
 - Agent 能处理包含多个步骤的复杂视频剪辑需求；
 - 自动完成工具调用、数据记录、文件保存全流程。
 
 ---
 
 ### Day21：第3周项目：可部署的视频处理 AI Agent
+
 #### 最终交付物
+
 1. 一个完整的 `video_agent.py` 文件；
 2. 支持多模型切换、异步工具、错误处理、数据持久化；
 3. 包含日志、数据库、配置文件；
 4. 可直接部署运行。
 
 #### 项目结构
+
 ```
 AI_Agent_LangChain/
 ├── video_agent.py       # 主程序
@@ -476,6 +521,7 @@ AI_Agent_LangChain/
 ```
 
 #### 部署测试（30分钟）
+
 ```bash
 # 生成依赖列表
 pip freeze > requirements.txt
@@ -485,6 +531,7 @@ python video_agent.py
 ```
 
 #### 验收标准
+
 - 输入任意复杂视频剪辑指令，Agent 能自动完成所有步骤；
 - 即使出现参数错误/工具调用失败，也能优雅处理；
 - 所有操作都有日志记录，可追溯。
@@ -492,6 +539,7 @@ python video_agent.py
 ---
 
 ## 第3周核心知识点总结
+
 1. **多模型策略**：根据任务类型动态选择最优模型（通用/代码/推理）；
 2. **生产级 Tool**：支持动态参数、异步调用、优先级排序；
 3. **容错机制**：错误捕获、自动重试、日志记录，保证 Agent 稳定性；
@@ -502,6 +550,7 @@ python video_agent.py
 ---
 
 ### 进阶建议
+
 - 第3周完成后，可尝试将 Agent 封装为 API 接口（FastAPI）；
 - 对接前端页面，实现可视化操作界面；
 - 扩展更多视频处理工具（转码、加水印、合并）。
