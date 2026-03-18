@@ -5,5 +5,5 @@ from langchain_ollama import OllamaLLM
 llm = OllamaLLM(model="qwen:0.5b")
 
 # 调用模型（和 OpenAI 的 invoke 方法完全一样）
-response = llm.invoke("介绍一下 LangChain用中文")
+response = llm.invoke("用中文介绍一下 LangChain")
 print(response)

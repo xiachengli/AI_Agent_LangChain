@@ -2,6 +2,8 @@
 ## 一、核心目标
 搭建无需外网、免费的 LangChain 本地开发环境，使用 Ollama 运行本地大模型（通义千问 qwen:0.5b），避开 OpenAI API 网络/付费问题。
 
+Ollama是一个开源的、轻量级的本地大语言模型运行平台，相当于大模型的"应用商店"+"运行环境"。它让你能像安装手机App一样，在个人电脑上一键部署和运行各种开源大模型。
+
 ## 二、环境搭建步骤
 ### 1. 创建并激活 Python 虚拟环境（Windows PowerShell）
 ```powershell
@@ -38,6 +40,23 @@ pull qwen:0.5b
 
 # 方式2：VS Code 终端（需环境变量生效/指定完整路径）
 ollama pull qwen:0.5b
+# 查看已安装模型
+ollama list
+#卸载
+ollama rm qwen:14b
+ollama pull qwen3.5:9b
+# 查看模型的详细信息
+ollama show qwen3.5:9b
+# 旧代码（使用 qwen:14b）
+# llm = OllamaLLM(model="qwen:14b", temperature=0.7)
+
+# 新代码（使用 qwen3.5:9b）
+llm = OllamaLLM(
+    model="qwen3.5:9b", 
+    temperature=0.7,
+    num_ctx=4096,  # 上下文长度
+    top_p=0.9,
+)
 # （若识别不到命令，重启 VS Code/电脑，或用完整路径：& 'C:\Users\你的用户名\AppData\Local\Programs\Ollama\ollama.exe' pull qwen:0.5b）
 ```
 - 模型特点：qwen:0.5b 是超轻量版通义千问，仅 0.5B 参数，低配电脑也能流畅运行。
