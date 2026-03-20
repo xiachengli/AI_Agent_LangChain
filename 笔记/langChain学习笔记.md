@@ -338,3 +338,5 @@ add_routes(
 
 **LangChain = 大模型的工作流编排工具**，让AI从"会说"变成"会做" 。从基础Chain开始，逐步掌握RAG和Agent，最终构建可投入生产的智能应用。
 
+![alt text](image-2.png)
+![alt text](image-3.png)
