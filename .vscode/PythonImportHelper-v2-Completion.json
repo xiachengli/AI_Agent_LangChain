@@ -1,0 +1,852 @@
+[
+    {
+        "label": "PromptTemplate",
+        "importPath": "langchain_core.prompts",
+        "description": "langchain_core.prompts",
+        "isExtraImport": true,
+        "detail": "langchain_core.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "ChatPromptTemplate",
+        "importPath": "langchain_core.prompts",
+        "description": "langchain_core.prompts",
+        "isExtraImport": true,
+        "detail": "langchain_core.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "PromptTemplate",
+        "importPath": "langchain_core.prompts",
+        "description": "langchain_core.prompts",
+        "isExtraImport": true,
+        "detail": "langchain_core.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "PromptTemplate",
+        "importPath": "langchain_core.prompts",
+        "description": "langchain_core.prompts",
+        "isExtraImport": true,
+        "detail": "langchain_core.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "PromptTemplate",
+        "importPath": "langchain_core.prompts",
+        "description": "langchain_core.prompts",
+        "isExtraImport": true,
+        "detail": "langchain_core.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "PromptTemplate",
+        "importPath": "langchain_core.prompts",
+        "description": "langchain_core.prompts",
+        "isExtraImport": true,
+        "detail": "langchain_core.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "FewShotPromptTemplate",
+        "importPath": "langchain_core.prompts",
+        "description": "langchain_core.prompts",
+        "isExtraImport": true,
+        "detail": "langchain_core.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "OllamaLLM",
+        "importPath": "langchain_ollama",
+        "description": "langchain_ollama",
+        "isExtraImport": true,
+        "detail": "langchain_ollama",
+        "documentation": {}
+    },
+    {
+        "label": "OllamaLLM",
+        "importPath": "langchain_ollama",
+        "description": "langchain_ollama",
+        "isExtraImport": true,
+        "detail": "langchain_ollama",
+        "documentation": {}
+    },
+    {
+        "label": "OllamaLLM",
+        "importPath": "langchain_ollama",
+        "description": "langchain_ollama",
+        "isExtraImport": true,
+        "detail": "langchain_ollama",
+        "documentation": {}
+    },
+    {
+        "label": "OllamaLLM",
+        "importPath": "langchain_ollama",
+        "description": "langchain_ollama",
+        "isExtraImport": true,
+        "detail": "langchain_ollama",
+        "documentation": {}
+    },
+    {
+        "label": "ChatOllama",
+        "importPath": "langchain_ollama",
+        "description": "langchain_ollama",
+        "isExtraImport": true,
+        "detail": "langchain_ollama",
+        "documentation": {}
+    },
+    {
+        "label": "OllamaLLM",
+        "importPath": "langchain_ollama",
+        "description": "langchain_ollama",
+        "isExtraImport": true,
+        "detail": "langchain_ollama",
+        "documentation": {}
+    },
+    {
+        "label": "OllamaLLM",
+        "importPath": "langchain_ollama",
+        "description": "langchain_ollama",
+        "isExtraImport": true,
+        "detail": "langchain_ollama",
+        "documentation": {}
+    },
+    {
+        "label": "OllamaEmbeddings",
+        "importPath": "langchain_ollama",
+        "description": "langchain_ollama",
+        "isExtraImport": true,
+        "detail": "langchain_ollama",
+        "documentation": {}
+    },
+    {
+        "label": "StrOutputParser",
+        "importPath": "langchain_core.output_parsers",
+        "description": "langchain_core.output_parsers",
+        "isExtraImport": true,
+        "detail": "langchain_core.output_parsers",
+        "documentation": {}
+    },
+    {
+        "label": "StrOutputParser",
+        "importPath": "langchain_core.output_parsers",
+        "description": "langchain_core.output_parsers",
+        "isExtraImport": true,
+        "detail": "langchain_core.output_parsers",
+        "documentation": {}
+    },
+    {
+        "label": "StrOutputParser",
+        "importPath": "langchain_core.output_parsers",
+        "description": "langchain_core.output_parsers",
+        "isExtraImport": true,
+        "detail": "langchain_core.output_parsers",
+        "documentation": {}
+    },
+    {
+        "label": "JsonOutputParser",
+        "importPath": "langchain_core.output_parsers",
+        "description": "langchain_core.output_parsers",
+        "isExtraImport": true,
+        "detail": "langchain_core.output_parsers",
+        "documentation": {}
+    },
+    {
+        "label": "StrOutputParser",
+        "importPath": "langchain_core.output_parsers",
+        "description": "langchain_core.output_parsers",
+        "isExtraImport": true,
+        "detail": "langchain_core.output_parsers",
+        "documentation": {}
+    },
+    {
+        "label": "create_sql_query_chain",
+        "importPath": "langchain_classic.chains.sql_database.query",
+        "description": "langchain_classic.chains.sql_database.query",
+        "isExtraImport": true,
+        "detail": "langchain_classic.chains.sql_database.query",
+        "documentation": {}
+    },
+    {
+        "label": "SQLDatabase",
+        "importPath": "langchain_community.utilities",
+        "description": "langchain_community.utilities",
+        "isExtraImport": true,
+        "detail": "langchain_community.utilities",
+        "documentation": {}
+    },
+    {
+        "label": "BaseTool",
+        "importPath": "langchain_core.tools",
+        "description": "langchain_core.tools",
+        "isExtraImport": true,
+        "detail": "langchain_core.tools",
+        "documentation": {}
+    },
+    {
+        "label": "tool",
+        "importPath": "langchain_core.tools",
+        "description": "langchain_core.tools",
+        "isExtraImport": true,
+        "detail": "langchain_core.tools",
+        "documentation": {}
+    },
+    {
+        "label": "tool",
+        "importPath": "langchain_core.tools",
+        "description": "langchain_core.tools",
+        "isExtraImport": true,
+        "detail": "langchain_core.tools",
+        "documentation": {}
+    },
+    {
+        "label": "tool",
+        "importPath": "langchain_core.tools",
+        "description": "langchain_core.tools",
+        "isExtraImport": true,
+        "detail": "langchain_core.tools",
+        "documentation": {}
+    },
+    {
+        "label": "StructuredTool",
+        "importPath": "langchain_core.tools",
+        "description": "langchain_core.tools",
+        "isExtraImport": true,
+        "detail": "langchain_core.tools",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "MemorySaver",
+        "importPath": "langgraph.checkpoint.memory",
+        "description": "langgraph.checkpoint.memory",
+        "isExtraImport": true,
+        "detail": "langgraph.checkpoint.memory",
+        "documentation": {}
+    },
+    {
+        "label": "create_react_agent",
+        "importPath": "langchain_classic.agents",
+        "description": "langchain_classic.agents",
+        "isExtraImport": true,
+        "detail": "langchain_classic.agents",
+        "documentation": {}
+    },
+    {
+        "label": "AgentExecutor",
+        "importPath": "langchain_classic.agents",
+        "description": "langchain_classic.agents",
+        "isExtraImport": true,
+        "detail": "langchain_classic.agents",
+        "documentation": {}
+    },
+    {
+        "label": "hub",
+        "importPath": "langchain_classic",
+        "description": "langchain_classic",
+        "isExtraImport": true,
+        "detail": "langchain_classic",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "TextLoader",
+        "importPath": "langchain_community.document_loaders",
+        "description": "langchain_community.document_loaders",
+        "isExtraImport": true,
+        "detail": "langchain_community.document_loaders",
+        "documentation": {}
+    },
+    {
+        "label": "JSONLoader",
+        "importPath": "langchain_community.document_loaders",
+        "description": "langchain_community.document_loaders",
+        "isExtraImport": true,
+        "detail": "langchain_community.document_loaders",
+        "documentation": {}
+    },
+    {
+        "label": "CharacterTextSplitter",
+        "importPath": "langchain_text_splitters",
+        "description": "langchain_text_splitters",
+        "isExtraImport": true,
+        "detail": "langchain_text_splitters",
+        "documentation": {}
+    },
+    {
+        "label": "CharacterTextSplitter",
+        "importPath": "langchain_text_splitters",
+        "description": "langchain_text_splitters",
+        "isExtraImport": true,
+        "detail": "langchain_text_splitters",
+        "documentation": {}
+    },
+    {
+        "label": "RecursiveCharacterTextSplitter",
+        "importPath": "langchain_text_splitters",
+        "description": "langchain_text_splitters",
+        "isExtraImport": true,
+        "detail": "langchain_text_splitters",
+        "documentation": {}
+    },
+    {
+        "label": "Chroma",
+        "importPath": "langchain_community.vectorstores",
+        "description": "langchain_community.vectorstores",
+        "isExtraImport": true,
+        "detail": "langchain_community.vectorstores",
+        "documentation": {}
+    },
+    {
+        "label": "ollama",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "ollama",
+        "description": "ollama",
+        "detail": "ollama",
+        "documentation": {}
+    },
+    {
+        "label": "prompt",
+        "kind": 5,
+        "importPath": "chainDemo",
+        "description": "chainDemo",
+        "peekOfCode": "prompt = PromptTemplate(\n    input_variables=[\"topic\"],\n    template=\"给我写一段关于 {topic} 的学习总结，要求简洁明了。\"\n)\n# 2. 加载本地 Ollama 模型（qwen:0.5b）\n# 确保已经运行过: ollama pull qwen:0.5b\nllm = OllamaLLM(model=\"qwen:0.5b\", temperature=0.7)\n# 3. 构建 Chain（LCEL 标准写法：推荐链式调用）\n# 流程：输入 -> 提示词模板 -> 模型 -> 输出解析\nchain = prompt | llm | StrOutputParser()",
+        "detail": "chainDemo",
+        "documentation": {}
+    },
+    {
+        "label": "llm",
+        "kind": 5,
+        "importPath": "chainDemo",
+        "description": "chainDemo",
+        "peekOfCode": "llm = OllamaLLM(model=\"qwen:0.5b\", temperature=0.7)\n# 3. 构建 Chain（LCEL 标准写法：推荐链式调用）\n# 流程：输入 -> 提示词模板 -> 模型 -> 输出解析\nchain = prompt | llm | StrOutputParser()\n# 4. 执行 Chain\nif __name__ == \"__main__\":\n    topic = \"LangChain 核心框架\"\n    print(f\"正在生成关于 [{topic}] 的总结...\\n\")\n    # 调用模型\n    result = chain.invoke({\"topic\": topic})",
+        "detail": "chainDemo",
+        "documentation": {}
+    },
+    {
+        "label": "chain",
+        "kind": 5,
+        "importPath": "chainDemo",
+        "description": "chainDemo",
+        "peekOfCode": "chain = prompt | llm | StrOutputParser()\n# 4. 执行 Chain\nif __name__ == \"__main__\":\n    topic = \"LangChain 核心框架\"\n    print(f\"正在生成关于 [{topic}] 的总结...\\n\")\n    # 调用模型\n    result = chain.invoke({\"topic\": topic})\n    # 打印结果\n    print(\"=== 生成结果 ===\")\n    print(result)",
+        "detail": "chainDemo",
+        "documentation": {}
+    },
+    {
+        "label": "db_user",
+        "kind": 5,
+        "importPath": "createSqlDemo",
+        "description": "createSqlDemo",
+        "peekOfCode": "db_user = \"root\"\ndb_password = \"root\"\ndb_host = \"localhost\"\ndb_port = 3306\ndb_datebase = \"test\"\n# 连接Mysql数据库\ndb = SQLDatabase.from_uri(f\"mysql+pymysql://{db_user}:{db_password}@{db_host}:{db_port}/{db_datebase}\")\nprint(\"哪种数据库：\", db.dialect)\nprint(\"数据库表：\", db.get_usable_table_names())\n# 执行SQL查询",
+        "detail": "createSqlDemo",
+        "documentation": {}
+    },
+    {
+        "label": "db_password",
+        "kind": 5,
+        "importPath": "createSqlDemo",
+        "description": "createSqlDemo",
+        "peekOfCode": "db_password = \"root\"\ndb_host = \"localhost\"\ndb_port = 3306\ndb_datebase = \"test\"\n# 连接Mysql数据库\ndb = SQLDatabase.from_uri(f\"mysql+pymysql://{db_user}:{db_password}@{db_host}:{db_port}/{db_datebase}\")\nprint(\"哪种数据库：\", db.dialect)\nprint(\"数据库表：\", db.get_usable_table_names())\n# 执行SQL查询\nquery = \"SELECT count(*) FROM user;\"",
+        "detail": "createSqlDemo",
+        "documentation": {}
+    },
+    {
+        "label": "db_host",
+        "kind": 5,
+        "importPath": "createSqlDemo",
+        "description": "createSqlDemo",
+        "peekOfCode": "db_host = \"localhost\"\ndb_port = 3306\ndb_datebase = \"test\"\n# 连接Mysql数据库\ndb = SQLDatabase.from_uri(f\"mysql+pymysql://{db_user}:{db_password}@{db_host}:{db_port}/{db_datebase}\")\nprint(\"哪种数据库：\", db.dialect)\nprint(\"数据库表：\", db.get_usable_table_names())\n# 执行SQL查询\nquery = \"SELECT count(*) FROM user;\"\nprint(\"查询结果：\", db.run(query))",
+        "detail": "createSqlDemo",
+        "documentation": {}
+    },
+    {
+        "label": "db_port",
+        "kind": 5,
+        "importPath": "createSqlDemo",
+        "description": "createSqlDemo",
+        "peekOfCode": "db_port = 3306\ndb_datebase = \"test\"\n# 连接Mysql数据库\ndb = SQLDatabase.from_uri(f\"mysql+pymysql://{db_user}:{db_password}@{db_host}:{db_port}/{db_datebase}\")\nprint(\"哪种数据库：\", db.dialect)\nprint(\"数据库表：\", db.get_usable_table_names())\n# 执行SQL查询\nquery = \"SELECT count(*) FROM user;\"\nprint(\"查询结果：\", db.run(query))\n# create_sql_query_chain的使用：将自然语言查询转换为SQL查询",
+        "detail": "createSqlDemo",
+        "documentation": {}
+    },
+    {
+        "label": "db_datebase",
+        "kind": 5,
+        "importPath": "createSqlDemo",
+        "description": "createSqlDemo",
+        "peekOfCode": "db_datebase = \"test\"\n# 连接Mysql数据库\ndb = SQLDatabase.from_uri(f\"mysql+pymysql://{db_user}:{db_password}@{db_host}:{db_port}/{db_datebase}\")\nprint(\"哪种数据库：\", db.dialect)\nprint(\"数据库表：\", db.get_usable_table_names())\n# 执行SQL查询\nquery = \"SELECT count(*) FROM user;\"\nprint(\"查询结果：\", db.run(query))\n# create_sql_query_chain的使用：将自然语言查询转换为SQL查询\n# 加载模型",
+        "detail": "createSqlDemo",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "createSqlDemo",
+        "description": "createSqlDemo",
+        "peekOfCode": "db = SQLDatabase.from_uri(f\"mysql+pymysql://{db_user}:{db_password}@{db_host}:{db_port}/{db_datebase}\")\nprint(\"哪种数据库：\", db.dialect)\nprint(\"数据库表：\", db.get_usable_table_names())\n# 执行SQL查询\nquery = \"SELECT count(*) FROM user;\"\nprint(\"查询结果：\", db.run(query))\n# create_sql_query_chain的使用：将自然语言查询转换为SQL查询\n# 加载模型\nllm = OllamaLLM(\n    model=\"qwen2.5:3b\",  # 换小模型",
+        "detail": "createSqlDemo",
+        "documentation": {}
+    },
+    {
+        "label": "query",
+        "kind": 5,
+        "importPath": "createSqlDemo",
+        "description": "createSqlDemo",
+        "peekOfCode": "query = \"SELECT count(*) FROM user;\"\nprint(\"查询结果：\", db.run(query))\n# create_sql_query_chain的使用：将自然语言查询转换为SQL查询\n# 加载模型\nllm = OllamaLLM(\n    model=\"qwen2.5:3b\",  # 换小模型\n    temperature=0.7,\n    num_ctx=1024,  # 上下文长度\n    top_p=0.9,\n)",
+        "detail": "createSqlDemo",
+        "documentation": {}
+    },
+    {
+        "label": "llm",
+        "kind": 5,
+        "importPath": "createSqlDemo",
+        "description": "createSqlDemo",
+        "peekOfCode": "llm = OllamaLLM(\n    model=\"qwen2.5:3b\",  # 换小模型\n    temperature=0.7,\n    num_ctx=1024,  # 上下文长度\n    top_p=0.9,\n)\n# 创建SQL查询链\nsql_query_chain = create_sql_query_chain(   \n    llm=llm,\n    db=db,",
+        "detail": "createSqlDemo",
+        "documentation": {}
+    },
+    {
+        "label": "sql_query_chain",
+        "kind": 5,
+        "importPath": "createSqlDemo",
+        "description": "createSqlDemo",
+        "peekOfCode": "sql_query_chain = create_sql_query_chain(   \n    llm=llm,\n    db=db,\n    )       \n# 执行SQL查询链\nresult = sql_query_chain.invoke({\"question\": \"user表中有多少条记录。\"})\nprint(\"SQL查询链结果：\", result)",
+        "detail": "createSqlDemo",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "createSqlDemo",
+        "description": "createSqlDemo",
+        "peekOfCode": "result = sql_query_chain.invoke({\"question\": \"user表中有多少条记录。\"})\nprint(\"SQL查询链结果：\", result)",
+        "detail": "createSqlDemo",
+        "documentation": {}
+    },
+    {
+        "label": "VideoCutInput",
+        "kind": 6,
+        "importPath": "custom_tool",
+        "description": "custom_tool",
+        "peekOfCode": "class VideoCutInput(BaseModel):\n    path: str = Field(description=\"视频文件路径，如0001.mp4\")  # 视频路径参数\n    start: float = Field(description=\"裁剪开始时间（秒）\")  # 开始时间参数\n    end: float = Field(description=\"裁剪结束时间（秒）\")  # 结束时间参数\n# 定义视频裁剪工具类，继承BaseTool\nclass VideoCutTool(BaseTool):\n    name = \"video_cut\"  # 工具名称，Agent会用这个名称调用\n    description = \"视频裁剪工具：裁剪指定时间段的视频\"  # 工具描述\n    args_schema = VideoCutInput  # 绑定参数模型，自动校验输入\n    def _run(self, path: str, start: float, end: float) -> str:  # 工具核心执行方法，必须实现",
+        "detail": "custom_tool",
+        "documentation": {}
+    },
+    {
+        "label": "VideoCutTool",
+        "kind": 6,
+        "importPath": "custom_tool",
+        "description": "custom_tool",
+        "peekOfCode": "class VideoCutTool(BaseTool):\n    name = \"video_cut\"  # 工具名称，Agent会用这个名称调用\n    description = \"视频裁剪工具：裁剪指定时间段的视频\"  # 工具描述\n    args_schema = VideoCutInput  # 绑定参数模型，自动校验输入\n    def _run(self, path: str, start: float, end: float) -> str:  # 工具核心执行方法，必须实现\n        \"\"\"核心执行逻辑，这里是模拟视频裁剪，实际可以替换成真实的视频处理代码\"\"\"\n        if start >= end:  # 校验开始时间是否小于结束时间\n            return f\"裁剪失败：开始时间{start}≥结束时间{end}\"  # 错误返回\n        return f\"裁剪成功：{path} 从{start}秒到{end}秒，输出文件：{path}_cut.mp4\"  # 成功返回\n# 定义测试函数，测试工具是否能正常工作",
+        "detail": "custom_tool",
+        "documentation": {}
+    },
+    {
+        "label": "add_tool",
+        "kind": 2,
+        "importPath": "custom_tool",
+        "description": "custom_tool",
+        "peekOfCode": "def add_tool(a: int, b: int) -> int:\n    \"\"\"加法工具：计算两个整数的和\"\"\"  # 工具描述，Agent会根据这个决定是否调用\n    return a + b  # 工具执行逻辑\n@tool\ndef subtract_tool(a: int, b: int) -> int:\n    \"\"\"减法工具：计算a减去b的结果\"\"\"\n    return a - b\n# 方式2：用类继承BaseTool定义工具，适合复杂工具\n# 定义工具的输入参数模型，指定每个参数的描述，用于Agent理解如何传参\nclass VideoCutInput(BaseModel):",
+        "detail": "custom_tool",
+        "documentation": {}
+    },
+    {
+        "label": "subtract_tool",
+        "kind": 2,
+        "importPath": "custom_tool",
+        "description": "custom_tool",
+        "peekOfCode": "def subtract_tool(a: int, b: int) -> int:\n    \"\"\"减法工具：计算a减去b的结果\"\"\"\n    return a - b\n# 方式2：用类继承BaseTool定义工具，适合复杂工具\n# 定义工具的输入参数模型，指定每个参数的描述，用于Agent理解如何传参\nclass VideoCutInput(BaseModel):\n    path: str = Field(description=\"视频文件路径，如0001.mp4\")  # 视频路径参数\n    start: float = Field(description=\"裁剪开始时间（秒）\")  # 开始时间参数\n    end: float = Field(description=\"裁剪结束时间（秒）\")  # 结束时间参数\n# 定义视频裁剪工具类，继承BaseTool",
+        "detail": "custom_tool",
+        "documentation": {}
+    },
+    {
+        "label": "test_tools",
+        "kind": 2,
+        "importPath": "custom_tool",
+        "description": "custom_tool",
+        "peekOfCode": "def test_tools():\n    print(\"=== 测试加法工具 ===\")\n    add_result = add_tool.invoke({\"a\": 5, \"b\": 3})  # 调用加法工具，传入参数a=5，b=3\n    print(f\"5+3={add_result}\")  # 打印结果\n    print(\"=== 测试视频裁剪工具 ===\")\n    video_tool = VideoCutTool()  # 实例化视频裁剪工具\n    video_result = video_tool.invoke({\"path\": \"0001.mp4\", \"start\": 5.0, \"end\": 10.0})\n    print(video_result)  # 21. 打印工具返回结果\nif __name__ == \"__main__\":  # Python入口函数\n    test_tools()  # 调用测试函数",
+        "detail": "custom_tool",
+        "documentation": {}
+    },
+    {
+        "label": "llm",
+        "kind": 5,
+        "importPath": "demo",
+        "description": "demo",
+        "peekOfCode": "llm = OllamaLLM(model=\"qwen:0.5b\")\n# 调用模型（和 OpenAI 的 invoke 方法完全一样）\nresponse = llm.invoke(\"用中文介绍一下 LangChain\")\nprint(response)",
+        "detail": "demo",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "demo",
+        "description": "demo",
+        "peekOfCode": "response = llm.invoke(\"用中文介绍一下 LangChain\")\nprint(response)",
+        "detail": "demo",
+        "documentation": {}
+    },
+    {
+        "label": "calculator",
+        "kind": 2,
+        "importPath": "langGraphDemo",
+        "description": "langGraphDemo",
+        "peekOfCode": "def calculator(expression: str) -> str:\n    \"\"\"计算数学表达式\"\"\"\n    try:\n        # 安全地计算数学表达式\n        # 只允许基本的数学运算，避免安全风险\n        allowed_chars = set('0123456789+-*/(). ')\n        if not all(c in allowed_chars for c in expression):\n            return \"错误：表达式包含不安全字符\"\n        # 使用eval计算，但限制在数学表达式范围内\n        result = eval(expression, {\"__builtins__\": {}}, {})",
+        "detail": "langGraphDemo",
+        "documentation": {}
+    },
+    {
+        "label": "llm",
+        "kind": 5,
+        "importPath": "langGraphDemo",
+        "description": "langGraphDemo",
+        "peekOfCode": "llm = ChatOllama(model=\"qwen2.5:3b\", base_url=\"http://localhost:11434\")\n# 方法1：Hub 提示（推荐）\ntry:\n    prompt = hub.pull(\"hwchase17/react\")\n    print(\"✅ Hub 提示加载成功\")\nexcept:\n    # 方法2：手动提示\n    prompt = PromptTemplate.from_template(\"\"\"\n    你是一个AI助手，使用工具解决问题。\n    {tools}",
+        "detail": "langGraphDemo",
+        "documentation": {}
+    },
+    {
+        "label": "memory",
+        "kind": 5,
+        "importPath": "langGraphDemo",
+        "description": "langGraphDemo",
+        "peekOfCode": "memory = MemorySaver()\nagent = create_react_agent(llm, tools=[calculator], prompt=prompt)\nagent_executor = AgentExecutor(\n    agent=agent, \n    tools=[calculator],\n    checkpointer=memory,\n    verbose=True,\n    handle_parsing_errors=True\n)\n# 测试",
+        "detail": "langGraphDemo",
+        "documentation": {}
+    },
+    {
+        "label": "agent",
+        "kind": 5,
+        "importPath": "langGraphDemo",
+        "description": "langGraphDemo",
+        "peekOfCode": "agent = create_react_agent(llm, tools=[calculator], prompt=prompt)\nagent_executor = AgentExecutor(\n    agent=agent, \n    tools=[calculator],\n    checkpointer=memory,\n    verbose=True,\n    handle_parsing_errors=True\n)\n# 测试\nresult = agent_executor.invoke(",
+        "detail": "langGraphDemo",
+        "documentation": {}
+    },
+    {
+        "label": "agent_executor",
+        "kind": 5,
+        "importPath": "langGraphDemo",
+        "description": "langGraphDemo",
+        "peekOfCode": "agent_executor = AgentExecutor(\n    agent=agent, \n    tools=[calculator],\n    checkpointer=memory,\n    verbose=True,\n    handle_parsing_errors=True\n)\n# 测试\nresult = agent_executor.invoke(\n    {\"input\": \"100+250= ?\"},",
+        "detail": "langGraphDemo",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "langGraphDemo",
+        "description": "langGraphDemo",
+        "peekOfCode": "result = agent_executor.invoke(\n    {\"input\": \"100+250= ?\"},\n    config={\"configurable\": {\"thread_id\": \"test\"}}\n)\nprint(\"✅ 运行成功:\", result[\"output\"])\nresult = agent_executor.invoke(\n    {\"input\": \"计算2+2*3等于多少？\"},\n    config={\"configurable\": {\"thread_id\": \"test\"}}\n)\nprint(\"✅ 运行成功:\", result[\"output\"])",
+        "detail": "langGraphDemo",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "langGraphDemo",
+        "description": "langGraphDemo",
+        "peekOfCode": "result = agent_executor.invoke(\n    {\"input\": \"计算2+2*3等于多少？\"},\n    config={\"configurable\": {\"thread_id\": \"test\"}}\n)\nprint(\"✅ 运行成功:\", result[\"output\"])",
+        "detail": "langGraphDemo",
+        "documentation": {}
+    },
+    {
+        "label": "basic_llm_demo",
+        "kind": 2,
+        "importPath": "llm_chain",
+        "description": "llm_chain",
+        "peekOfCode": "def basic_llm_demo():\n    print(\"基础LLM调用示例:\")\n    response = llm.invoke(\"介绍一下Cusor\")\n    print(response)\n    print(\"-\"*50)\ndef basic_chain_demo():\n    print(\"基础Chain调用示例:\")\n    prompt = PromptTemplate.from_template(\"你好，{name}\")\n    chain = prompt | llm | StrOutputParser()\n    response = chain.invoke({\"name\": \"Cusor\"})",
+        "detail": "llm_chain",
+        "documentation": {}
+    },
+    {
+        "label": "basic_chain_demo",
+        "kind": 2,
+        "importPath": "llm_chain",
+        "description": "llm_chain",
+        "peekOfCode": "def basic_chain_demo():\n    print(\"基础Chain调用示例:\")\n    prompt = PromptTemplate.from_template(\"你好，{name}\")\n    chain = prompt | llm | StrOutputParser()\n    response = chain.invoke({\"name\": \"Cusor\"})\n    print(response)\n    print(\"-\"*50)\nif __name__ == \"__main__\":\n    basic_llm_demo()\n    basic_chain_demo()",
+        "detail": "llm_chain",
+        "documentation": {}
+    },
+    {
+        "label": "llm",
+        "kind": 5,
+        "importPath": "llm_chain",
+        "description": "llm_chain",
+        "peekOfCode": "llm = OllamaLLM(model=\"qwen:0.5b\",temperature=0.7)\ndef basic_llm_demo():\n    print(\"基础LLM调用示例:\")\n    response = llm.invoke(\"介绍一下Cusor\")\n    print(response)\n    print(\"-\"*50)\ndef basic_chain_demo():\n    print(\"基础Chain调用示例:\")\n    prompt = PromptTemplate.from_template(\"你好，{name}\")\n    chain = prompt | llm | StrOutputParser()",
+        "detail": "llm_chain",
+        "documentation": {}
+    },
+    {
+        "label": "AnswerSchema",
+        "kind": 6,
+        "importPath": "prompt_format",
+        "description": "prompt_format",
+        "peekOfCode": "class AnswerSchema(BaseModel):\n    answer: str = Field(description=\"问题的答案\")\n    reason: str = Field(description=\"答案的理由\")\n# 定义函数，演示JSON结构化输出\ndef json_format_demo():\n    print(\"=== JSON结构化输出 ===\")  # 打印标题\n    start_time = time.time()  # 开始计时\n    parser = JsonOutputParser(pydantic_object=AnswerSchema)  # 创建JSON解析器，指定用AnswerSchema验证结构\n    # 创建提示词模板，partial_variables是固定参数，这里传入解析器的格式说明\n    prompt = PromptTemplate(",
+        "detail": "prompt_format",
+        "documentation": {}
+    },
+    {
+        "label": "json_format_demo",
+        "kind": 2,
+        "importPath": "prompt_format",
+        "description": "prompt_format",
+        "peekOfCode": "def json_format_demo():\n    print(\"=== JSON结构化输出 ===\")  # 打印标题\n    start_time = time.time()  # 开始计时\n    parser = JsonOutputParser(pydantic_object=AnswerSchema)  # 创建JSON解析器，指定用AnswerSchema验证结构\n    # 创建提示词模板，partial_variables是固定参数，这里传入解析器的格式说明\n    prompt = PromptTemplate(\n        input_variables=[\"question\"],  # 动态变量是question\n        template=\"\"\"\n你是AI助手，必须严格按照指定格式输出JSON。\n格式要求：{format_instructions}  # 这里会替换成parser生成的JSON格式说明",
+        "detail": "prompt_format",
+        "documentation": {}
+    },
+    {
+        "label": "few_shot_demo",
+        "kind": 2,
+        "importPath": "prompt_format",
+        "description": "prompt_format",
+        "peekOfCode": "def few_shot_demo():\n    \"\"\"\n    Demonstrates how to use a few-shot prompt template with LangChain to guide an LLM's response format.\n    The function:\n    - Prints a title indicating a few-shot prompt example.\n    - Defines example input-output pairs to show desired response style.\n    - Sets up a prompt template for formatting each example.\n    - Combines examples, template, prefix, and suffix into a FewShotPromptTemplate.\n    - Constructs a chain with the prompt template, LLM, and output parser.\n    - Invokes the chain with a new input (\"AI Agent\") to generate a model response mimicking the examples.",
+        "detail": "prompt_format",
+        "documentation": {}
+    },
+    {
+        "label": "llm",
+        "kind": 5,
+        "importPath": "prompt_format",
+        "description": "prompt_format",
+        "peekOfCode": "llm = OllamaLLM(\n    model=\"qwen2.5:3b\",  # 换小模型\n    temperature=0.7,\n    num_ctx=1024,  # 上下文长度\n    top_p=0.9,\n)\n# 定义一个Pydantic模型，规定JSON输出的结构：必须有answer和reason两个字段，Field是字段描述\nclass AnswerSchema(BaseModel):\n    answer: str = Field(description=\"问题的答案\")\n    reason: str = Field(description=\"答案的理由\")",
+        "detail": "prompt_format",
+        "documentation": {}
+    },
+    {
+        "label": "loader",
+        "kind": 5,
+        "importPath": "向量数据库的使用",
+        "description": "向量数据库的使用",
+        "peekOfCode": "loader = TextLoader(\"loader数据/01txt.txt\", encoding='utf-8')\n#加载文档\ndocs = loader.load()\nprint(docs)\n#切分\nfrom langchain_text_splitters import CharacterTextSplitter\nsplitter = CharacterTextSplitter(\n    chunk_size=50,#每个分块的字符数\n    chunk_overlap=5,#分块之间的重叠字符数，确保上下文连续性\n    length_function=len,#用于计算分块长度的函数，默认使用 len 函数",
+        "detail": "向量数据库的使用",
+        "documentation": {}
+    },
+    {
+        "label": "docs",
+        "kind": 5,
+        "importPath": "向量数据库的使用",
+        "description": "向量数据库的使用",
+        "peekOfCode": "docs = loader.load()\nprint(docs)\n#切分\nfrom langchain_text_splitters import CharacterTextSplitter\nsplitter = CharacterTextSplitter(\n    chunk_size=50,#每个分块的字符数\n    chunk_overlap=5,#分块之间的重叠字符数，确保上下文连续性\n    length_function=len,#用于计算分块长度的函数，默认使用 len 函数\n    separator=\"\",#分隔符，默认使用换行符,空字符串表示不使用（分隔符优先 ）\n    keep_separator=True,#是否保留分隔符，默认保留keep_separator=True 表示在分块中保留分隔符，False 则不保留",
+        "detail": "向量数据库的使用",
+        "documentation": {}
+    },
+    {
+        "label": "splitter",
+        "kind": 5,
+        "importPath": "向量数据库的使用",
+        "description": "向量数据库的使用",
+        "peekOfCode": "splitter = CharacterTextSplitter(\n    chunk_size=50,#每个分块的字符数\n    chunk_overlap=5,#分块之间的重叠字符数，确保上下文连续性\n    length_function=len,#用于计算分块长度的函数，默认使用 len 函数\n    separator=\"\",#分隔符，默认使用换行符,空字符串表示不使用（分隔符优先 ）\n    keep_separator=True,#是否保留分隔符，默认保留keep_separator=True 表示在分块中保留分隔符，False 则不保留\n)\n#切分文档\nchunks = splitter.split_documents(docs)\nprint(f\"切分后的文档块数量: {len(chunks)}\")",
+        "detail": "向量数据库的使用",
+        "documentation": {}
+    },
+    {
+        "label": "chunks",
+        "kind": 5,
+        "importPath": "向量数据库的使用",
+        "description": "向量数据库的使用",
+        "peekOfCode": "chunks = splitter.split_documents(docs)\nprint(f\"切分后的文档块数量: {len(chunks)}\")\n#向量化 并存入Chroma数据库\nfrom langchain_ollama import OllamaEmbeddings\n# 创建嵌入模型\nembeddings = OllamaEmbeddings(model=\"qwen3-embedding\")\n# 创建Chroma数据库实例\nfrom langchain_community.vectorstores import Chroma\ntry:\n    vectorstore = Chroma.from_documents(",
+        "detail": "向量数据库的使用",
+        "documentation": {}
+    },
+    {
+        "label": "embeddings",
+        "kind": 5,
+        "importPath": "向量数据库的使用",
+        "description": "向量数据库的使用",
+        "peekOfCode": "embeddings = OllamaEmbeddings(model=\"qwen3-embedding\")\n# 创建Chroma数据库实例\nfrom langchain_community.vectorstores import Chroma\ntry:\n    vectorstore = Chroma.from_documents(\n        documents=chunks,\n        embedding=embeddings,\n        collection_name=\"my_collection\",\n        persist_directory=\"./chroma_db\"\n    )",
+        "detail": "向量数据库的使用",
+        "documentation": {}
+    },
+    {
+        "label": "loader",
+        "kind": 5,
+        "importPath": "文档加载器",
+        "description": "文档加载器",
+        "peekOfCode": "loader = JSONLoader(\"loader数据/01json.json\", jq_schema=\".[]\", text_content=False)\ndocs = loader.load()\nprint(docs)",
+        "detail": "文档加载器",
+        "documentation": {}
+    },
+    {
+        "label": "docs",
+        "kind": 5,
+        "importPath": "文档加载器",
+        "description": "文档加载器",
+        "peekOfCode": "docs = loader.load()\nprint(docs)",
+        "detail": "文档加载器",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "文档嵌入模型",
+        "description": "文档嵌入模型",
+        "peekOfCode": "response = ollama.embed(\n    model='qwen3-embedding',\n    input='The sky is blue because of Rayleigh scattering',\n)\nprint(response.embeddings)\n#句子向量化\n#文档向量化",
+        "detail": "文档嵌入模型",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "文档拆分器",
+        "description": "文档拆分器",
+        "peekOfCode": "text = \"\"\"\n   缺少导入语句：代码中直接使用了 JSONLoader 但没有导入它。我添加了正确的导入：from langchain_community.document_loaders import JSONLoader\n虚拟环境未激活：langchain_community 包安装在虚拟环境中，需要先激活环境。\n缺少依赖包：JSONLoader 需要 jq 包，我帮您安装了它。\nJSON 文件格式错误：原文件不是有效的 JSON 数组，我修复了格式并更正了中文字符。\n参数设置：JSONLoader 需要 jq_schema 参数，对于数组使用 .[]，并设置 text_content=False 以处理字典内容。 \n \"\"\"\n#递归字符拆分器 常用 保留上下文 智能分段 灵活适配\nsplitter_recursive = RecursiveCharacterTextSplitter(\n    chunk_size=50,#每个分块的字符数，默认4000   ",
+        "detail": "文档拆分器",
+        "documentation": {}
+    },
+    {
+        "label": "splitter_recursive",
+        "kind": 5,
+        "importPath": "文档拆分器",
+        "description": "文档拆分器",
+        "peekOfCode": "splitter_recursive = RecursiveCharacterTextSplitter(\n    chunk_size=50,#每个分块的字符数，默认4000   \n    chunk_overlap=5,#分块之间的重叠字符数，确保上下文连续性\n    length_function=len,#用于计算分块长度的函数，默认使用 len 函数\n    separator=\"\",#分隔符，默认使用换行符,空字符串表示不使用（分隔符优先 ）\n    keep_separator=True,#是否保留分隔符，默认保留keep_separator=True 表示在分块中保留分隔符，False 则不保留\n)\nsplitter = CharacterTextSplitter(\n    chunk_size=50,#每个分块的字符数\n    chunk_overlap=5,#分块之间的重叠字符数，确保上下文连续性",
+        "detail": "文档拆分器",
+        "documentation": {}
+    },
+    {
+        "label": "splitter",
+        "kind": 5,
+        "importPath": "文档拆分器",
+        "description": "文档拆分器",
+        "peekOfCode": "splitter = CharacterTextSplitter(\n    chunk_size=50,#每个分块的字符数\n    chunk_overlap=5,#分块之间的重叠字符数，确保上下文连续性\n    length_function=len,#用于计算分块长度的函数，默认使用 len 函数\n    separator=\"\",#分隔符，默认使用换行符,空字符串表示不使用（分隔符优先 ）\n    keep_separator=True,#是否保留分隔符，默认保留keep_separator=True 表示在分块中保留分隔符，False 则不保留\n)\nchunks = splitter.split_text(text)\nfor i, chunk in enumerate(chunks):\n    print(f\"Chunk {i+1} size: {len(chunk)}\")",
+        "detail": "文档拆分器",
+        "documentation": {}
+    },
+    {
+        "label": "chunks",
+        "kind": 5,
+        "importPath": "文档拆分器",
+        "description": "文档拆分器",
+        "peekOfCode": "chunks = splitter.split_text(text)\nfor i, chunk in enumerate(chunks):\n    print(f\"Chunk {i+1} size: {len(chunk)}\")\n    print(f\"Chunk {i+1}:\\n{chunk}\\n\")",
+        "detail": "文档拆分器",
+        "documentation": {}
+    },
+    {
+        "label": "add_numbers",
+        "kind": 2,
+        "importPath": "自定义工具",
+        "description": "自定义工具",
+        "peekOfCode": "def add_numbers(a, b):\n    \"\"\"计算两个数字的和\"\"\"\n    return a + b\nprint(f\"(name = {add_numbers.name}\")  #工具名称\nprint(f\"description = {add_numbers.description}\")  #工具描述\nprint(f\"args_schema = {add_numbers.args_schema}\")   #工具参数模式\nprint(f\"args = {add_numbers.args}\")   #工具参数列表\nprint(f\"return_direct = {add_numbers.return_direct}\")   #是否直接返回结果，默认为False，仅与Agent相关   表示返回一个包含工具调用信息的字典；如果设置为True，则直接返回工具的输出结果。\n# 函数调用\n#print(add_numbers(3, 2))",
+        "detail": "自定义工具",
+        "documentation": {}
+    },
+    {
+        "label": "my_tool",
+        "kind": 2,
+        "importPath": "自定义工具",
+        "description": "自定义工具",
+        "peekOfCode": "def my_tool(x: int, y: int) -> int:\n    \"\"\"计算两个整数的乘积\"\"\"\n    return x * y\nmy_tool_structured = StructuredTool.from_function(\n    func=my_tool,\n    name=\"multiply_numbers\",\n    description=\"计算两个整数的乘积\",       \n    return_direct=True\n)\nprint(f\"(name = {my_tool_structured.name}\")  #工具名称",
+        "detail": "自定义工具",
+        "documentation": {}
+    },
+    {
+        "label": "print(f\"(name",
+        "kind": 5,
+        "importPath": "自定义工具",
+        "description": "自定义工具",
+        "peekOfCode": "print(f\"(name = {add_numbers.name}\")  #工具名称\nprint(f\"description = {add_numbers.description}\")  #工具描述\nprint(f\"args_schema = {add_numbers.args_schema}\")   #工具参数模式\nprint(f\"args = {add_numbers.args}\")   #工具参数列表\nprint(f\"return_direct = {add_numbers.return_direct}\")   #是否直接返回结果，默认为False，仅与Agent相关   表示返回一个包含工具调用信息的字典；如果设置为True，则直接返回工具的输出结果。\n# 函数调用\n#print(add_numbers(3, 2))\n# 调用工具\nprint(add_numbers.invoke({\"a\": 3, \"b\": 2}))\n# 自定义工具方式2：StructuredTool",
+        "detail": "自定义工具",
+        "documentation": {}
+    },
+    {
+        "label": "print(f\"description",
+        "kind": 5,
+        "importPath": "自定义工具",
+        "description": "自定义工具",
+        "peekOfCode": "print(f\"description = {add_numbers.description}\")  #工具描述\nprint(f\"args_schema = {add_numbers.args_schema}\")   #工具参数模式\nprint(f\"args = {add_numbers.args}\")   #工具参数列表\nprint(f\"return_direct = {add_numbers.return_direct}\")   #是否直接返回结果，默认为False，仅与Agent相关   表示返回一个包含工具调用信息的字典；如果设置为True，则直接返回工具的输出结果。\n# 函数调用\n#print(add_numbers(3, 2))\n# 调用工具\nprint(add_numbers.invoke({\"a\": 3, \"b\": 2}))\n# 自定义工具方式2：StructuredTool\ndef my_tool(x: int, y: int) -> int:",
+        "detail": "自定义工具",
+        "documentation": {}
+    },
+    {
+        "label": "print(f\"args_schema",
+        "kind": 5,
+        "importPath": "自定义工具",
+        "description": "自定义工具",
+        "peekOfCode": "print(f\"args_schema = {add_numbers.args_schema}\")   #工具参数模式\nprint(f\"args = {add_numbers.args}\")   #工具参数列表\nprint(f\"return_direct = {add_numbers.return_direct}\")   #是否直接返回结果，默认为False，仅与Agent相关   表示返回一个包含工具调用信息的字典；如果设置为True，则直接返回工具的输出结果。\n# 函数调用\n#print(add_numbers(3, 2))\n# 调用工具\nprint(add_numbers.invoke({\"a\": 3, \"b\": 2}))\n# 自定义工具方式2：StructuredTool\ndef my_tool(x: int, y: int) -> int:\n    \"\"\"计算两个整数的乘积\"\"\"",
+        "detail": "自定义工具",
+        "documentation": {}
+    },
+    {
+        "label": "print(f\"args",
+        "kind": 5,
+        "importPath": "自定义工具",
+        "description": "自定义工具",
+        "peekOfCode": "print(f\"args = {add_numbers.args}\")   #工具参数列表\nprint(f\"return_direct = {add_numbers.return_direct}\")   #是否直接返回结果，默认为False，仅与Agent相关   表示返回一个包含工具调用信息的字典；如果设置为True，则直接返回工具的输出结果。\n# 函数调用\n#print(add_numbers(3, 2))\n# 调用工具\nprint(add_numbers.invoke({\"a\": 3, \"b\": 2}))\n# 自定义工具方式2：StructuredTool\ndef my_tool(x: int, y: int) -> int:\n    \"\"\"计算两个整数的乘积\"\"\"\n    return x * y",
+        "detail": "自定义工具",
+        "documentation": {}
+    },
+    {
+        "label": "print(f\"return_direct",
+        "kind": 5,
+        "importPath": "自定义工具",
+        "description": "自定义工具",
+        "peekOfCode": "print(f\"return_direct = {add_numbers.return_direct}\")   #是否直接返回结果，默认为False，仅与Agent相关   表示返回一个包含工具调用信息的字典；如果设置为True，则直接返回工具的输出结果。\n# 函数调用\n#print(add_numbers(3, 2))\n# 调用工具\nprint(add_numbers.invoke({\"a\": 3, \"b\": 2}))\n# 自定义工具方式2：StructuredTool\ndef my_tool(x: int, y: int) -> int:\n    \"\"\"计算两个整数的乘积\"\"\"\n    return x * y\nmy_tool_structured = StructuredTool.from_function(",
+        "detail": "自定义工具",
+        "documentation": {}
+    },
+    {
+        "label": "my_tool_structured",
+        "kind": 5,
+        "importPath": "自定义工具",
+        "description": "自定义工具",
+        "peekOfCode": "my_tool_structured = StructuredTool.from_function(\n    func=my_tool,\n    name=\"multiply_numbers\",\n    description=\"计算两个整数的乘积\",       \n    return_direct=True\n)\nprint(f\"(name = {my_tool_structured.name}\")  #工具名称\nprint(f\"description = {my_tool_structured.description}\")  #工具描述\nprint(my_tool_structured.invoke({\"x\": 4, \"y\": 5}))  #调用工具",
+        "detail": "自定义工具",
+        "documentation": {}
+    },
+    {
+        "label": "print(f\"(name",
+        "kind": 5,
+        "importPath": "自定义工具",
+        "description": "自定义工具",
+        "peekOfCode": "print(f\"(name = {my_tool_structured.name}\")  #工具名称\nprint(f\"description = {my_tool_structured.description}\")  #工具描述\nprint(my_tool_structured.invoke({\"x\": 4, \"y\": 5}))  #调用工具",
+        "detail": "自定义工具",
+        "documentation": {}
+    },
+    {
+        "label": "print(f\"description",
+        "kind": 5,
+        "importPath": "自定义工具",
+        "description": "自定义工具",
+        "peekOfCode": "print(f\"description = {my_tool_structured.description}\")  #工具描述\nprint(my_tool_structured.invoke({\"x\": 4, \"y\": 5}))  #调用工具",
+        "detail": "自定义工具",
+        "documentation": {}
+    }
+]
