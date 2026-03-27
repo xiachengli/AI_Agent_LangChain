@@ -45,24 +45,40 @@
 3. 安装Docker与Docker Compose：
 `# 1：更新系统软件包
 sudo apt update && sudo apt upgrade -y
+
 # 2：安装Docker依赖
+
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
+
 # 使用阿里云Docker镜像（国内腾讯云服务器优先选择，解决官方源访问慢问题）
+
 # 阿里云镜像优势：国内访问延迟低、下载速度快，稳定性高，无需科学上网
+
 # 添加阿里云Docker GPG密钥（当前命令）
+
 # 核心：将文本格式密钥转为二进制格式（--dearmor作用），保存到系统推荐的密钥目录
+
 # 3：导入阿里云Docker GPG密钥
-curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+curl -fsSL <https://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg> | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
 # 添加阿里云Docker软件源（详解如下）
+
 # 完整命令拆解：echo "软件源配置内容" | sudo tee 软件源文件 > /dev/null
+
 # 4：配置阿里云Docker软件源
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://mirrors.aliyun.com/docker-ce/linux/ubuntu noble stable" | sudo tee /etc/apt/sources.list.d/docker.list
+
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] <https://mirrors.aliyun.com/docker-ce/linux/ubuntu> noble stable" | sudo tee /etc/apt/sources.list.d/docker.list
+
 # 5：安装Docker
+
 sudo apt install -y docker-ce docker-ce-cli containerd.io
+
 # 6：启动Docker并设置开机自启
+
 sudo systemctl start docker && sudo systemctl enable docker`
 
-![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/ec857f7c98b845c8be2dc4611139a8b7.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774541682&x-signature=cDc8%2BimofjllFumBNEwwGA%2F6dNs%3D&resource_key=bd34762c-6f9e-4c94-8aba-20e75e426c0f&resource_key=bd34762c-6f9e-4c94-8aba-20e75e426c0f)
+![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/ec857f7c98b845c8be2dc4611139a8b7.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774580110&x-signature=UEA60DK1DFFZ9jsM5mfPvjZNN%2Fs%3D&resource_key=bd34762c-6f9e-4c94-8aba-20e75e426c0f&resource_key=bd34762c-6f9e-4c94-8aba-20e75e426c0f)
 
 `# 7：安装Docker Compose
 sudo curl -L "https://github.com/docker/compose/releases/download/v2.20.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
@@ -77,15 +93,15 @@ sudo curl -L "https://github.com/docker/compose/releases/download/v2.20.2/docker
 
 "registry-mirrors":[
 
-"https://docker.mirrors.ustc.edu.cn",  # 中科大镜像，稳定且速度快，优先推荐
+"<https://docker.mirrors.ustc.edu.cn>",  # 中科大镜像，稳定且速度快，优先推荐
 
-"https://hub-mirror.c.163.com",      # 网易镜像，国内节点多，兼容性好
+"<https://hub-mirror.c.163.com>",      # 网易镜像，国内节点多，兼容性好
 
-"https://5tqw56kt.mirror.aliyuncs.com", # 阿里云镜像，适配腾讯云网络，延迟低
+"<https://5tqw56kt.mirror.aliyuncs.com>", # 阿里云镜像，适配腾讯云网络，延迟低
 
-"https://docker.m.daocloud.io",      #  DaoCloud镜像，备用稳定
+"<https://docker.m.daocloud.io>",      #  DaoCloud镜像，备用稳定
 
-"https://docker.nju.edu.cn"          # 南京大学镜像，备用，适合华东地区
+"<https://docker.nju.edu.cn>"          # 南京大学镜像，备用，适合华东地区
 
 ]
 
@@ -95,17 +111,19 @@ sudo curl -L "https://github.com/docker/compose/releases/download/v2.20.2/docker
 
 `# 8：赋予Docker Compose执行权限
 sudo chmod +x /usr/local/bin/docker-compose
+
 # 9：验证Docker与Docker Compose安装
+
 docker --version && docker-compose --version`
 
-![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/22e87dbd60b049c69f3bc3b3dffe923c.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774541682&x-signature=ci8i1HHRZVg2oO10KBByeTGp2lA%3D&resource_key=e7b2a6aa-37db-4566-9013-53d4df13c68e&resource_key=e7b2a6aa-37db-4566-9013-53d4df13c68e)
+![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/22e87dbd60b049c69f3bc3b3dffe923c.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774580110&x-signature=g%2B5V7uD2LI8%2FGNUXu2KtGVGsBwU%3D&resource_key=e7b2a6aa-37db-4566-9013-53d4df13c68e&resource_key=e7b2a6aa-37db-4566-9013-53d4df13c68e)
 
 1. Docker中部署Dify：
        `# 10：创建Dify部署目录并进入
 mkdir -p ~/dify && cd ~/dify
 ` `# 11：下载Dify`
 
-2. `sudo git clone ` `https://gitee.com/shkstart/dify.git`
+2. `sudo git clone` `https://gitee.com/shkstart/dify.git`
 
 3. `# 12：启动Dify服务（后台运行）`
 
@@ -115,28 +133,28 @@ mkdir -p ~/dify && cd ~/dify
 `# 13：验证Dify部署（查看容器运行状态）
 ` `sudo docker ps | grep dify`
 
-![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/32684616a525447fa7e3bae6b8c6793f.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774541682&x-signature=v8ZMjChT2qkwRBMqbQcL5nN1gnw%3D&resource_key=2ebee89a-de38-4f76-b4ad-0cb6f09c9424&resource_key=2ebee89a-de38-4f76-b4ad-0cb6f09c9424)
+![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/32684616a525447fa7e3bae6b8c6793f.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774580110&x-signature=zsMBSnzqI%2BKjMSsdaSWPxRBY1Gw%3D&resource_key=2ebee89a-de38-4f76-b4ad-0cb6f09c9424&resource_key=2ebee89a-de38-4f76-b4ad-0cb6f09c9424)
 
 `# 14：访问Dify（浏览器输入对应地址，完成初始化）
 ` `# 浏览器输入 http://腾讯云实例公网IP:`80
 
-![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/24ae5ba30a494a8aa4feba18b9b903f3.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774541682&x-signature=hsQNEWfiHH6DniWluScKNJMhwac%3D&resource_key=e98588a0-f00e-4eaa-8bd4-9efc6fd67276&resource_key=e98588a0-f00e-4eaa-8bd4-9efc6fd67276)
+![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/24ae5ba30a494a8aa4feba18b9b903f3.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774580110&x-signature=ECKIxe3aqEueizXuTeg3svRpPl0%3D&resource_key=e98588a0-f00e-4eaa-8bd4-9efc6fd67276&resource_key=e98588a0-f00e-4eaa-8bd4-9efc6fd67276)
 
 查看日志
 
 docker compose logs -f plugin_daemon
 
-![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/68fe436e54d2476b9313d84d196645a4.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774541682&x-signature=JXNXQZodrAE75J624ZUux6WthWA%3D&resource_key=ae20f9d2-9f2a-42e9-8481-0f4126e8600b&resource_key=ae20f9d2-9f2a-42e9-8481-0f4126e8600b)
+![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/68fe436e54d2476b9313d84d196645a4.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774580110&x-signature=TPIn0VGPZNsNHiw%2B62E%2Bc%2BImzUc%3D&resource_key=ae20f9d2-9f2a-42e9-8481-0f4126e8600b&resource_key=ae20f9d2-9f2a-42e9-8481-0f4126e8600b)
 
 营养师助手：
 
-![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/7a7bc2b1eb7c42bd80b875be27887736.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774541682&x-signature=IOIcoNd3zncerk3c%2BHKCIVixkvM%3D&resource_key=36c16c61-5b3f-4354-9073-1da479f43de7&resource_key=36c16c61-5b3f-4354-9073-1da479f43de7)
+![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/7a7bc2b1eb7c42bd80b875be27887736.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774580110&x-signature=aCHsINyJ1uw4l3rP%2FcktRjIyZ0I%3D&resource_key=36c16c61-5b3f-4354-9073-1da479f43de7&resource_key=36c16c61-5b3f-4354-9073-1da479f43de7)
 
 ### 步骤2：AutoDL实例环境搭建（部署Ollama与Xinference）
 
 1. AutoDL实例配置：登录AutoDL控制台，选择适配镜像（Pytorch2.1.2+Python3.10+CUDA11.8），创建实例，记录实例公网IP与SSH端口，通过SSH连接实例（命令：ssh root@实例公网IP -p 实例SSH端口）
 
-![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/32abe098605c442da27c9594216e78d9.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774541682&x-signature=pxgqbdkVMRvTkqd%2FlIkVZzBlvKo%3D&resource_key=a6ab6c8b-14a5-445a-98b4-d8d668099d9d&resource_key=a6ab6c8b-14a5-445a-98b4-d8d668099d9d)
+![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/32abe098605c442da27c9594216e78d9.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774580110&x-signature=FTNUoAtQV45GGuLmRrKpIZZvmCI%3D&resource_key=a6ab6c8b-14a5-445a-98b4-d8d668099d9d&resource_key=a6ab6c8b-14a5-445a-98b4-d8d668099d9d)
 
 ### 步骤3：AutoDL部署Ollama并拉取Deepseek模型
 
@@ -150,12 +168,12 @@ source /etc/network_turbo
 2. `mkdir ./dify`
 
 3. `cd dify` `
-` `curl -fsSL https://ollama.com/install.sh | `sh
+` `curl -fsSL https://ollama.com/install.sh |`sh
 
 4. `# 16：启动Ollama服务（后台运行）
-` `OLLAMA_HOST=` `127.0.0.1:6006` ` ollama serve &`
+` `OLLAMA_HOST=` `127.0.0.1:6006` `ollama serve &`
 
-![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/f3d46615b0de419686de2ce287b04cb5.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774541682&x-signature=2%2Ff5oxrLlJSYgr4WRZcWirEu3Y4%3D&resource_key=fdbdce05-76d2-4663-8d81-1560a307e00f&resource_key=fdbdce05-76d2-4663-8d81-1560a307e00f)
+![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/f3d46615b0de419686de2ce287b04cb5.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774580110&x-signature=kpf0DS7Nr0ecnGV8fVSrS0SacWM%3D&resource_key=fdbdce05-76d2-4663-8d81-1560a307e00f&resource_key=fdbdce05-76d2-4663-8d81-1560a307e00f)
 
 `# 17：验证Ollama启动状态
 ` `ps aux | grep ollama`
@@ -163,75 +181,61 @@ source /etc/network_turbo
 1. 拉取并测试Deepseek模型（无需进入Docker容器）：
         `# 18：拉取Deepseek模型（7B版本，显存占用约8GB，适合AutoDL实例）
 ollama pull deepseek-r1:7b
+
 # 可选19：拉取14B版本（需显存≥16GB）
+
 # 20：测试模型（启动模型并进行简单交互）
+
 ollama run deepseek-r1:7b
+
 # 21：退出模型交互
+
 # 输入/exit退出交互`
 
-![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/7507d52ab5a24675b3db3bc813bfe67b.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774541682&x-signature=zHSigZpKX0EMYVaOYHzrgxwIj8w%3D&resource_key=0e962af0-f881-4df5-b8cd-a55131253ce9&resource_key=0e962af0-f881-4df5-b8cd-a55131253ce9)
+![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/7507d52ab5a24675b3db3bc813bfe67b.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774580110&x-signature=pTKAQat1oY%2FL9PofhWE%2BklsXRYU%3D&resource_key=0e962af0-f881-4df5-b8cd-a55131253ce9&resource_key=0e962af0-f881-4df5-b8cd-a55131253ce9)
 
 1. 验证Ollama服务：在AutoDL实例中执行curl命令，验证服务可用性：
 `# 22：验证Ollama服务可用性
 curl http://localhost:11434/api/generate -d '{ "model":"deepseek-r1:7b","prompt":"介绍大模型部署流程","stream":false}'`
 
-![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/53b93cb0a87c406ba116dae55562eecc.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774541682&x-signature=gO9wraD%2F0W4vI0N48CuIZmZXiW0%3D&resource_key=53f38843-2ab7-42cc-af1e-60cced52a7fd&resource_key=53f38843-2ab7-42cc-af1e-60cced52a7fd)
+![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/53b93cb0a87c406ba116dae55562eecc.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774580110&x-signature=iFUju0F%2BkHerqagZ0pDiS7gJ7YM%3D&resource_key=53f38843-2ab7-42cc-af1e-60cced52a7fd&resource_key=53f38843-2ab7-42cc-af1e-60cced52a7fd)
 
 1. Dify打通ollama隧道并使用deepseek
 
-    ![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/0546c23c9ef94a748e0c7be44934107a.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774541682&x-signature=yDL%2FCvrgDy0gTywJhCzbJxfxc7s%3D&resource_key=9549cfed-7be9-4dd6-b792-0cee3270ad27&resource_key=9549cfed-7be9-4dd6-b792-0cee3270ad27)
+    ![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/0546c23c9ef94a748e0c7be44934107a.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774580110&x-signature=1Xb4CUJd39ZfLTMndunQLWiz9Mw%3D&resource_key=9549cfed-7be9-4dd6-b792-0cee3270ad27&resource_key=9549cfed-7be9-4dd6-b792-0cee3270ad27)
 
-![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/982e4c5b72434bd78d7a4662c3766444.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774541682&x-signature=TD1IxavZWPkc1AAU5KR7CVB2BGw%3D&resource_key=15f367bf-07ba-4e6a-bb68-d09c822c03ad&resource_key=15f367bf-07ba-4e6a-bb68-d09c822c03ad)
+![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/982e4c5b72434bd78d7a4662c3766444.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774580110&x-signature=Yt7AxNZmxGXATX%2FI2F%2BrXQAS2f8%3D&resource_key=15f367bf-07ba-4e6a-bb68-d09c822c03ad&resource_key=15f367bf-07ba-4e6a-bb68-d09c822c03ad)
 
-![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/7d73689941b24d6cade9ad925e3e8aff.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774541682&x-signature=%2F5J4XEDX3HO24v7zw7kCst6ON3s%3D&resource_key=1bb2dc29-3b50-4bc1-8ddf-0838eb77f0e8&resource_key=1bb2dc29-3b50-4bc1-8ddf-0838eb77f0e8)
+![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/7d73689941b24d6cade9ad925e3e8aff.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774580110&x-signature=A1bHIrPDzTpWtUPHaxnXulq%2F1nE%3D&resource_key=1bb2dc29-3b50-4bc1-8ddf-0838eb77f0e8&resource_key=1bb2dc29-3b50-4bc1-8ddf-0838eb77f0e8)
 
+![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/65d7133568be465ea0b087485146c3ff.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774580110&x-signature=xF2cO3Zu7HXcQu0PtHuZa1021R0%3D&resource_key=b2500b4b-44cc-4c93-b7dc-fe3603dd8f54&resource_key=b2500b4b-44cc-4c93-b7dc-fe3603dd8f54)
 
+### 步骤4：AutoDL部署Xinference并部署嵌入模型
 
-![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/65d7133568be465ea0b087485146c3ff.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774541682&x-signature=oQcXUUawaB%2FpiJpY8WFA2Dj%2BmPw%3D&resource_key=b2500b4b-44cc-4c93-b7dc-fe3603dd8f54&resource_key=b2500b4b-44cc-4c93-b7dc-fe3603dd8f54)
+![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/e0ad1d6af9634cc685b873893a1540f9.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774580110&x-signature=GQsR6dEht9824ojvvK6C6CUYq8k%3D&resource_key=5c35c32c-3361-4332-b5b6-8605d9913d6b&resource_key=5c35c32c-3361-4332-b5b6-8605d9913d6b)
 
-### 步骤4：AutoDL部署Xinference并部署嵌入模型、重排序模型
+![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/2e12154272b04f30bbeebc0de0917a9a.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774580110&x-signature=9v8mNrXogqG%2BX4ZFDjebVZ6OItA%3D&resource_key=24239c5e-f34d-47db-964e-4374e58e01ba&resource_key=24239c5e-f34d-47db-964e-4374e58e01ba)
 
-![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/e0ad1d6af9634cc685b873893a1540f9.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774541682&x-signature=3QTmgK0stMEpE03VFUATJGM0sTw%3D&resource_key=5c35c32c-3361-4332-b5b6-8605d9913d6b&resource_key=5c35c32c-3361-4332-b5b6-8605d9913d6b)
+1. AutoDL-SSH-Tools代理（用于本地访问Xinference WebUI）：`
+` `# 执行后输入实例密码，保持终端运行，即可通过本地浏览器访问 http://localhost:`6006
 
-1. 建立SSH隧道（用于本地访问Xinference WebUI）：
-        `# 32：本地终端执行（替换为AutoDL实例信息，建立SSH隧道）
-ssh -CNg -L 9997:127.0.0.1:9997 root@AutoDL实例公网IP -p AutoDL实例SSH端口
-# 执行后输入实例密码，保持终端运行，即可通过本地浏览器访问 http://localhost:9997`
+![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/b6a0646abb784937bf8cea7a84c87a51.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774580110&x-signature=sMKNRkFCmID35%2FQteYMPPiydWjU%3D&resource_key=0c9ffce3-e9b8-4881-a177-6208627812cd&resource_key=0c9ffce3-e9b8-4881-a177-6208627812cd)
 
-2. 部署嵌入模型（BGE-M3）：
-      
+1. 本地浏览器访问<http://localhost:6006，进入Xinference> WebUI
 
-3. 本地浏览器访问http://localhost:9997，进入Xinference WebUI
+2. 点击左上角“Launch Model”，选择“EMBEDDING MODELS”，搜索“bge-large-zh-v1.5 ”
 
-4. 点击左上角“Launch Model”，选择“EMBEDDING MODELS”，搜索“bge-m3”
+3. 等待模型下载并部署完成（可在AutoDL实例日志中查看部署进度）
 
-5. 配置模型：选择vllm引擎，保持默认参数，点击启动按钮，等待模型下载并部署完成（可在AutoDL实例日志中查看部署进度）
-
-6. 测试嵌入模型：
-          `# 33：测试BGE-M3嵌入模型
-from langchain_community.embeddings import XinferenceEmbeddings
-server_url="http://localhost:9997/"
-model_uid = "bge-m3"  # 需与WebUI中启动后的Model UID一致
-embed = XinferenceEmbeddings(server_url=server_url, model_uid=model_uid)
-# 测试嵌入生成
-print(embed.embed_query("大模型部署"))`
-
-部署重排序模型（BGE-Reranker-V2-M3）：
-      
-
-1. 在Xinference WebUI中，点击“Launch Model”，选择“RERANK MODELS”，搜索“bge-reranker-v2-m3”
-
-2. 配置模型：选择vllm引擎，保持默认参数，点击启动按钮，等待部署完成
-
-3. 验证部署：在WebUI“Running Models”中查看模型状态，确认状态为“Running”即可正常使用
+![Image](https://p11-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/4722cdcbe97448e0bd5341e065475bf2.png~tplv-noop.jpeg?rk3s=49177a0b&x-expires=1774580110&x-signature=IOVMtHMWSuSpf5c67DXon6BTiVI%3D&resource_key=d6e0022e-4765-4508-b6bd-eed958691ae4&resource_key=d6e0022e-4765-4508-b6bd-eed958691ae4)
 
 ### 步骤5：接口测试与联调（确保各服务正常通信）
 
-1. Dify服务测试：浏览器访问http://腾讯云实例公网IP:5001，登录管理员账号，创建应用，测试对话功能，确认Dify服务正常运行
+1. Dify服务测试：浏览器访问<http://腾讯云实例公网IP:5001，登录管理员账号，创建应用，测试对话功能，确认Dify服务正常运行>
 
-2. Ollama与Deepseek测试：在AutoDL实例中再次执行模型交互命令，或通过curl调用接口，确认Deepseek模型响应正常；若需与Dify联调，需在Dify中配置Ollama接口（地址：http://腾讯云内网IP:6006）
+2. Ollama与Deepseek测试：在AutoDL实例中再次执行模型交互命令，或通过curl调用接口，确认Deepseek模型响应正常；若需与Dify联调，需在Dify中配置Ollama接口（地址：<http://腾讯云内网IP:6006）>
 
-3. Xinference模型测试：分别调用嵌入模型与重排序模型接口，验证模型输出正常；若需与Dify联调，在Dify中配置Xinference接口（地址：http://AutoDL实例公网IP:9997）
+3. Xinference模型测试：分别调用嵌入模型与重排序模型接口，验证模型输出正常；若需与Dify联调，在Dify中配置Xinference接口（地址：<http://AutoDL实例公网IP:9997）>
 
 4. 异常排查：若服务启动失败，查看对应日志（Dify日志：docker logs 容器ID；Xinference日志：cat xinference.log；Ollama日志：docker logs ollama）；若端口无法访问，检查腾讯云与AutoDL安全组配置，开放对应端口
 
@@ -261,24 +265,7 @@ print(embed.embed_query("大模型部署"))`
 
 1. 问题1：Ollama拉取Deepseek模型中断
         解决：重新执行ollama pull deepseek-r1:7b命令（18），Ollama支持断点续传；若下载速度过慢，检查AutoDL实例网络，或更换模型版本（7B版本体积更小，下载更快）
-      
-
-2. 问题2：Xinference启动失败，提示“引擎加载失败”
-        解决：优先使用vllm引擎，重新执行pip install "xinference(vllm)"命令（25）；检查CUDA版本与vllm引擎兼容性，确保AutoDL实例GPU支持CUDA；当前已默认使用阿里云Docker镜像，无需额外替换，若仍出现Docker安装失败，可重新执行步骤1中阿里云镜像配置相关命令（3、4）
-      
-
-3. 问题3：本地无法访问Xinference WebUI
-        解决：检查SSH隧道是否正常运行（本地终端未关闭，对应32）；确认AutoDL实例9997端口已开放；检查隧道命令中的IP、端口是否正确
-      
-
-4. 问题4：Dify无法连接Ollama/Xinference服务
-       解决：检查AutoDL实例安全组是否开放11434（Ollama）、9997（Xinference）端口；确认Dify中配置的接口地址正确（AutoDL实例公网IP+对应端口）；检查AutoDL实例中对应服务是否正常运行（Ollama对应16、17，Xinference对应30、31）
-
-5. 问题5：Xinference部署模型时，提示“模型下载失败”
-        解决：确认已配置export XINFERENCE_MODEL_SRC=modelscope（28）；检查Git-LFS是否安装成功；重新启动Xinference服务（30），再次尝试部署
-      
 
 ## 六、部署总结
 
 本次专项部署核心逻辑：腾讯云搭建Docker环境部署Dify，提供大模型应用交互入口；AutoDL实例部署Ollama与Xinference，分别承载Deepseek对话模型、BGE-M3嵌入模型与BGE-Reranker-V2-M3重排序模型，形成完整的大模型部署链路。部署重点是做好环境适配（腾讯云与AutoDL实例配置）、端口开放、模型拉取与服务联调，同时关注版本兼容与数据安全。实操中需按步骤执行，重点排查端口、日志与服务状态，确保各环节衔接顺畅，保障服务长期稳定运行。
-> （注：文档部分内容可能由 AI 生成）
